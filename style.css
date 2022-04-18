@@ -15,7 +15,7 @@ body{
 
 main{
     padding: 0.5in;
-    max-width: 8.1in;
+    width: 8.1in;
     height: 11.5in;
     background: #fff;
     overflow: hidden;
@@ -126,4 +126,31 @@ a:hover{
 .active{
     background: #111;
     color: #fff;
+}
+
+@media only screen and (max-width: 520px) {
+
+main{
+    padding: 0.2in;
+}
+.header{
+    padding-left: 0.3in;
+}
+.header .name{
+    font-size: 14pt;
+    padding-left: 0.1in;
+}
+.profile{
+    transform: scale(0.7);
+}
+.header{
+    height: 50px;
+}
+.sub-header{
+    font-size: 12pt;
+    margin-top: 20px;
+}
+.detail{
+    font-size: 10pt;
+}
 }
