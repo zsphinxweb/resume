@@ -7,9 +7,13 @@ var m = 1;
 profile.addEventListener('click', ()=>{
     if (m %2 != 0){
        main.setAttribute('class', 'active');
+       profile.classList.add('active');
+       profile.style.boxShadow =  '0 0 0 6px #111';    
     }
     else{
         main.removeAttribute('class','active');
+        profile.classList.remove('active');
+        profile.style.boxShadow =  '0 0 0 6px #fff'; 
     }
     m+=1;
 })
